@@ -4,6 +4,8 @@ In this tutorial, you will learn how to make your existing tool pip and conda in
 
 `` git clone https://github.com/balabanmetin/pip-conda-tutorial-diameter.git``
 
+`` cd pip-conda-tutorial-diameter``
+
 Next, install the dependency packages for this tutorial using pip. Make sure your Python distribution has `pip` installed:
 
 ``pip install twine setuptools``
