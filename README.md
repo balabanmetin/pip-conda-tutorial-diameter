@@ -8,6 +8,8 @@ Next, install the dependency packages for this tutorial using pip. Make sure you
 
 ``pip install twine setuptools``
 
+The application we are creating is [nw_diameter](nw_diameter). It is a simple script that takes a newick file as an input and computes its diameter (a.k.a. the largest pairwise tree distance within the tree).
+
 
 ### Pip tutorial 
 
