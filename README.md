@@ -60,7 +60,7 @@ To upload to Anaconda cloud, run the following command:
 #### Using Github
 If you do not have a PyPi package, you can build a Conda package directly from your code on Github. To do so, change the `source` section of your `meta.yaml` to:
 
-git_rev: main
-git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git
+```git_rev: main
+git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git```
 
 
