@@ -6,9 +6,13 @@ In this tutorial, you will learn how to make your existing tool pip and conda in
 
 `` cd pip-conda-tutorial-diameter``
 
-Next, install the dependency packages for this tutorial using pip. Make sure your Python distribution has `pip` and `conda` installed:
+Next, install the dependency packages for this tutorial using pip. Make sure your Python distribution has `pip` and `conda` installed. For pip:
 
 ``pip install twine setuptools``
+
+For conda, download and install the correct [conda version](https://conda.io/projects/conda/en/latest/user-guide/install/index.html). Then, install conda-build:
+
+`` conda install conda-build``
 
 The application we are creating is [nw_diameter](nw_diameter). It is a simple script that takes a newick file as an input and computes its diameter (a.k.a. the largest pairwise tree distance within the tree).
 
