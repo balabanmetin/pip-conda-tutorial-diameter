@@ -69,7 +69,16 @@ git_rev: main
 git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git 
 ```
 
-#### Building for multiple Python versions and the **noarch** option
+#### Building for multiple Python versions
+As you may have noticed, so far we can only build a conda package that is limited to the Python version of the host machine that it was built on. To build the variants for multiple Python versions (e.g. 3.7, 3.8, and 3.9), you can add inside your `tutorial-diameter` directory the file `conda_build_config.yaml` with the following content:
+
+```
+python:
+    - 3.9.*
+    - 3.8.*
+    - 3.7.*
+```
+Now when you run `conda build`, it will create three conda versions, corresponding to Python versions 3.7, 3.8, and 3.9, for your package.
 
 #### Converting to other platforms
 The conda built is platform specific. To convert to other platforms, use `conda convert`:
