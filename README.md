@@ -79,3 +79,10 @@ Now you should see multiple built versions, one for each platform. To upload all
 `anaconda upload outputdir/*/*`
 
 Note: to choose a specific platform to convert to, change the keyword *all* to the platform of your choice (e.g. osx-64, linux-32, linux-64, win-32, win-64, etc.)
+
+#### Install and Test
+Install your package using conda:
+
+`conda install -c <YOUR_CONDA_USERNAME> tutorial-diameter`
+
+Now you should be able to run the command `nw_diameter` as before!
