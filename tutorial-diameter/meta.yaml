@@ -1,0 +1,39 @@
+{% set name = "tutorial-diameter" %}
+{% set version = "1.0.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  #url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  #sha256: 8bd758d77237ad160441fdfb7498f0a065d1a70a4f67f5e530f268094bfc1446
+  git_rev: main
+  git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git
+
+#build:
+  number: 0
+  noarch: generic
+  script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - pip
+    - python
+    - treeswift
+  run:
+    - python
+    - treeswift
+
+about:
+  home: "https://github.com/balabanmetin/pip-conda-tutorial-diameter"
+  license: UNKNOWN
+  license_family: OTHER
+  license_file: 
+  summary: "Compute diameter of (largest pairwise distance within) a newick tree"
+  doc_url: 
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - your-github-id-here
