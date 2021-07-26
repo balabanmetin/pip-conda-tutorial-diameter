@@ -80,7 +80,7 @@ Now you should see multiple built versions, one for each platform. To upload all
 
 Note: to choose a specific platform to convert to, change the keyword *all* to the platform of your choice (e.g. osx-64, linux-32, linux-64, win-32, win-64, etc.)
 
-#### Install and Test
+#### Installing and Testing
 Install your package using conda:
 
 `conda install -c <YOUR_CONDA_USERNAME> tutorial-diameter`
