@@ -53,11 +53,11 @@ Now you should see the directory `tutorial-diameter` created for you, inside whi
 
 `conda build tutorial-diameter`
 
-To upload to Anaconda cloud, run the following :
+You built package will be stored in `$HOME/anaconda3/conda-bld/<YOUR_PLATFORM>/tutorial-diameter-1.0.1-py<YOUR_PYTHON_VERSION>_0.tar.bz2`. To upload to Anaconda cloud, run the following :
 
 ```
 anaconda login
-anaconda upload $HOME/anaconda3/conda-bld/<YOUR_PLATFORM>/tutorial-diameter-1.0.1-py38_0.tar.bz2 
+anaconda upload `$HOME/anaconda3/conda-bld/<YOUR_PLATFORM>/tutorial-diameter-1.0.1-py<YOUR_PYTHON_VERSION>_0.tar.bz2`
 ```
 where `<YOUR_PLATFORM>` is the platform of your machine (e.g. linux-64, osx-64, etc.)
 
@@ -68,6 +68,8 @@ If you do not have a PyPi package, you can build a Conda package directly from y
 git_rev: main
 git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git 
 ```
+
+#### Building for multiple Python versions and the **noarch** option
 
 #### Converting to other platforms
 The conda built is platform specific. To convert to other platforms, use `conda convert`:
