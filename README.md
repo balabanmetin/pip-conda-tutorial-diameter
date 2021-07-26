@@ -57,6 +57,8 @@ To upload to Anaconda cloud, run the following command:
 
 `anaconda upload $HOME/anaconda3/conda-bld/<YOUR_OS>/tutorial-diameter-1.0.1-py38_0.tar.bz2`
 
+#### Using Github
+If you do not have a PyPi package, you can build a Conda package directly from your code on Github. To do so, change the `package` 
 
 
 
