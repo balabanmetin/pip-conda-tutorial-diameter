@@ -6,7 +6,7 @@ In this tutorial, you will learn how to make your existing tool pip and conda in
 
 `` cd pip-conda-tutorial-diameter``
 
-Next, install the dependency packages for this tutorial using pip. Make sure your Python distribution has `pip` installed:
+Next, install the dependency packages for this tutorial using pip. Make sure your Python distribution has `pip` and `conda` installed:
 
 ``pip install twine setuptools``
 
@@ -42,5 +42,21 @@ If everything went well, run the command `nw_diameter` using the test newick fil
 `nw_diameter data/tree.nwk`
 
 Diameter of this tree is 0.7!.
+
+### Conda tutorial
+#### Using PyPi skeleton
+If you have already built and uploaded your package to PyPi, you can use it as a skeleton to make the Conda build easier.
+
+`conda skeleton pypi tutorial-diameter`
+
+Now you should see the directory `tutorial-diameter` created for you, inside which you can see the file `meta.yaml`. This is the recipe needed to build a conda package. Now execute the following command to build:
+
+`conda build tutorial-diameter`
+
+To upload to Anaconda cloud, run the following command:
+
+`anaconda upload $HOME/anaconda3/conda-bld/<YOUR_OS>/tutorial-diameter-1.0.1-py38_0.tar.bz2`
+
+
 
 
