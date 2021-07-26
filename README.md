@@ -63,8 +63,7 @@ If you do not have a PyPi package, you can build a Conda package directly from y
 
 ```
 git_rev: main
-git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git
-```
+git_url: https://github.com/balabanmetin/pip-conda-tutorial-diameter.git ```
 
 #### Converting to other platforms
 The conda built is platform specific. To convert to other platforms, use `conda convert`:
